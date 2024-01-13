@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    connection_pool (2.4.1)
+    gosu (1.4.6)
+    redis (5.0.8)
+      redis-client (>= 0.17.0)
+    redis-client (0.19.1)
+      connection_pool
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  gosu
+  redis
+
+BUNDLED WITH
+   2.2.22
