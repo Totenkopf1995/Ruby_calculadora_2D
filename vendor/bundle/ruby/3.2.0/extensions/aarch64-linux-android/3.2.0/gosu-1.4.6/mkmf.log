@@ -1,0 +1,119 @@
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --exists gl
+package configuration for gl is not found
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --exists sdl2
+package configuration for sdl2 is not found
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --exists vorbisfile
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --libs vorbisfile |
+=> "-L/data/data/com.termux/files/usr/lib -lvorbisfile\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib "aarch64-linux-android-clang -o conftest -I/data/data/com.termux/files/usr/include/ruby-3.2.0/aarch64-linux-android -I/data/data/com.termux/files/usr/include/ruby-3.2.0/ruby/backward -I/data/data/com.termux/files/usr/include/ruby-3.2.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound -I../../dependencies/mojoAL/AL  -I/data/data/com.termux/files/usr/include   -fstack-protector-strong -Oz -fno-strict-aliasing -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wundef -fPIC -DGOSU_DEPRECATED= -DNDEBUG conftest.c  -L. -L/data/data/com.termux/files/usr/lib -L. -L/data/data/com.termux/files/usr/lib -Wl,-rpath=/data/data/com.termux/files/usr/lib -fopenmp -static-openmp -Wl,--enable-new-dtags -Wl,--as-needed -Wl,-z,relro,-z,now -Wl,--no-as-needed,-landroid-support,--as-needed -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -lruby  -lm -lpthread  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib "aarch64-linux-android-clang -o conftest -I/data/data/com.termux/files/usr/include/ruby-3.2.0/aarch64-linux-android -I/data/data/com.termux/files/usr/include/ruby-3.2.0/ruby/backward -I/data/data/com.termux/files/usr/include/ruby-3.2.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound -I../../dependencies/mojoAL/AL  -I/data/data/com.termux/files/usr/include   -fstack-protector-strong -Oz -fno-strict-aliasing -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wundef -fPIC -DGOSU_DEPRECATED= -DNDEBUG conftest.c  -L. -L/data/data/com.termux/files/usr/lib -L. -L/data/data/com.termux/files/usr/lib -Wl,-rpath=/data/data/com.termux/files/usr/lib -fopenmp -static-openmp -Wl,--enable-new-dtags -Wl,--as-needed -Wl,-z,relro,-z,now -Wl,--no-as-needed,-landroid-support,--as-needed -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -lruby -L/data/data/com.termux/files/usr/lib -lvorbisfile -lm -lpthread  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --cflags-only-I vorbisfile |
+=> "-I/data/data/com.termux/files/usr/include\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --cflags-only-other vorbisfile |
+=> "\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --libs-only-l vorbisfile |
+=> "-lvorbisfile\n"
+package configuration for vorbisfile
+incflags: -I/data/data/com.termux/files/usr/include
+cflags: 
+ldflags: -L/data/data/com.termux/files/usr/lib
+libs: -lvorbisfile
+
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --exists sndfile
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --libs sndfile |
+=> "-L/data/data/com.termux/files/usr/lib -lsndfile\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib "aarch64-linux-android-clang -o conftest -I/data/data/com.termux/files/usr/include/ruby-3.2.0/aarch64-linux-android -I/data/data/com.termux/files/usr/include/ruby-3.2.0/ruby/backward -I/data/data/com.termux/files/usr/include/ruby-3.2.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound -I../../dependencies/mojoAL/AL -I/data/data/com.termux/files/usr/include  -I/data/data/com.termux/files/usr/include   -fstack-protector-strong -Oz -fno-strict-aliasing -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wundef -fPIC -DGOSU_DEPRECATED= -DNDEBUG  conftest.c  -L. -L/data/data/com.termux/files/usr/lib -L. -L/data/data/com.termux/files/usr/lib -Wl,-rpath=/data/data/com.termux/files/usr/lib -fopenmp -static-openmp -Wl,--enable-new-dtags -Wl,--as-needed -Wl,-z,relro,-z,now -Wl,--no-as-needed,-landroid-support,--as-needed -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -L/data/data/com.termux/files/usr/lib     -lvorbisfile -lruby -L/data/data/com.termux/files/usr/lib -lsndfile -lm -lpthread  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --cflags-only-I sndfile |
+=> "-I/data/data/com.termux/files/usr/include -I/data/data/com.termux/files/usr/include/opus\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --cflags-only-other sndfile |
+=> "\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --libs-only-l sndfile |
+=> "-lsndfile\n"
+package configuration for sndfile
+incflags: -I/data/data/com.termux/files/usr/include -I/data/data/com.termux/files/usr/include/opus
+cflags: 
+ldflags: -L/data/data/com.termux/files/usr/lib
+libs: -lsndfile
+
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --exists libmpg123
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --libs libmpg123 |
+=> "-L/data/data/com.termux/files/usr/lib -lmpg123\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib "aarch64-linux-android-clang -o conftest -I/data/data/com.termux/files/usr/include/ruby-3.2.0/aarch64-linux-android -I/data/data/com.termux/files/usr/include/ruby-3.2.0/ruby/backward -I/data/data/com.termux/files/usr/include/ruby-3.2.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound -I../../dependencies/mojoAL/AL -I/data/data/com.termux/files/usr/include -I/data/data/com.termux/files/usr/include -I/data/data/com.termux/files/usr/include/opus  -I/data/data/com.termux/files/usr/include   -fstack-protector-strong -Oz -fno-strict-aliasing -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wundef -fPIC -DGOSU_DEPRECATED= -DNDEBUG   conftest.c  -L. -L/data/data/com.termux/files/usr/lib -L. -L/data/data/com.termux/files/usr/lib -Wl,-rpath=/data/data/com.termux/files/usr/lib -fopenmp -static-openmp -Wl,--enable-new-dtags -Wl,--as-needed -Wl,-z,relro,-z,now -Wl,--no-as-needed,-landroid-support,--as-needed -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -L/data/data/com.termux/files/usr/lib -L/data/data/com.termux/files/usr/lib     -lvorbisfile -lsndfile -lruby -L/data/data/com.termux/files/usr/lib -lmpg123 -lm -lpthread  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --cflags-only-I libmpg123 |
+=> "-I/data/data/com.termux/files/usr/include\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --cflags-only-other libmpg123 |
+=> "\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --libs-only-l libmpg123 |
+=> "-lmpg123\n"
+package configuration for libmpg123
+incflags: -I/data/data/com.termux/files/usr/include
+cflags: 
+ldflags: -L/data/data/com.termux/files/usr/lib
+libs: -lmpg123
+
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --exists fontconfig
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --libs fontconfig |
+=> "-L/data/data/com.termux/files/usr/lib -lfontconfig -lfreetype\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib "aarch64-linux-android-clang -o conftest -I/data/data/com.termux/files/usr/include/ruby-3.2.0/aarch64-linux-android -I/data/data/com.termux/files/usr/include/ruby-3.2.0/ruby/backward -I/data/data/com.termux/files/usr/include/ruby-3.2.0 -I. -I../../include -I../../dependencies/stb -I../../dependencies/utf8proc -I../../dependencies/SDL_sound -I../../dependencies/mojoAL/AL -I/data/data/com.termux/files/usr/include -I/data/data/com.termux/files/usr/include -I/data/data/com.termux/files/usr/include/opus -I/data/data/com.termux/files/usr/include  -I/data/data/com.termux/files/usr/include   -fstack-protector-strong -Oz -fno-strict-aliasing -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wextra-tokens -Wdeprecated-declarations -Wdivision-by-zero -Wdiv-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wundef -fPIC -DGOSU_DEPRECATED= -DNDEBUG    conftest.c  -L. -L/data/data/com.termux/files/usr/lib -L. -L/data/data/com.termux/files/usr/lib -Wl,-rpath=/data/data/com.termux/files/usr/lib -fopenmp -static-openmp -Wl,--enable-new-dtags -Wl,--as-needed -Wl,-z,relro,-z,now -Wl,--no-as-needed,-landroid-support,--as-needed -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -L/data/data/com.termux/files/usr/lib -L/data/data/com.termux/files/usr/lib -L/data/data/com.termux/files/usr/lib     -lvorbisfile -lsndfile -lmpg123 -lruby -L/data/data/com.termux/files/usr/lib -lfontconfig -lfreetype -lm -lpthread  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --cflags-only-I fontconfig |
+=> "-I/data/data/com.termux/files/usr/include -I/data/data/com.termux/files/usr/include/freetype2 -I/data/data/com.termux/files/usr/include/libpng16 -I/data/data/com.termux/files/usr/include\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --cflags-only-other fontconfig |
+=> "\n"
+LD_LIBRARY_PATH=.:/data/data/com.termux/files/usr/lib pkg-config --libs-only-l fontconfig |
+=> "-lfontconfig -lfreetype\n"
+package configuration for fontconfig
+incflags: -I/data/data/com.termux/files/usr/include -I/data/data/com.termux/files/usr/include/freetype2 -I/data/data/com.termux/files/usr/include/libpng16 -I/data/data/com.termux/files/usr/include
+cflags: 
+ldflags: -L/data/data/com.termux/files/usr/lib
+libs: -lfontconfig -lfreetype
+

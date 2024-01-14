@@ -1,0 +1,23 @@
+current directory: /data/data/com.termux/files/home/Progrmacion/Gosu/Ruby_calculadora_2D/vendor/bundle/ruby/3.2.0/gems/gosu-1.4.6/ext/gosu
+/data/data/com.termux/files/usr/bin/ruby extconf.rb
+The Gosu gem requires some libraries to be installed system-wide.
+See the following site for a list:
+https://github.com/gosu/gosu/wiki/Getting-Started-on-Linux
+creating Makefile
+
+current directory: /data/data/com.termux/files/home/Progrmacion/Gosu/Ruby_calculadora_2D/vendor/bundle/ruby/3.2.0/gems/gosu-1.4.6/ext/gosu
+make DESTDIR\= sitearchdir\=./.gem.20240114-9794-25asc6 sitelibdir\=./.gem.20240114-9794-25asc6 clean
+
+current directory: /data/data/com.termux/files/home/Progrmacion/Gosu/Ruby_calculadora_2D/vendor/bundle/ruby/3.2.0/gems/gosu-1.4.6/ext/gosu
+make DESTDIR\= sitearchdir\=./.gem.20240114-9794-25asc6 sitelibdir\=./.gem.20240114-9794-25asc6
+compiling ../../src/SDL_sound.c
+In file included from ../../src/SDL_sound.c:1:
+In file included from /data/data/com.termux/files/home/Progrmacion/Gosu/Ruby_calculadora_2D/vendor/bundle/ruby/3.2.0/gems/gosu-1.4.6/dependencies/SDL_sound/SDL_sound.c:17:
+In file included from /data/data/com.termux/files/home/Progrmacion/Gosu/Ruby_calculadora_2D/vendor/bundle/ruby/3.2.0/gems/gosu-1.4.6/dependencies/SDL_sound/SDL_sound_internal.h:21:
+/data/data/com.termux/files/home/Progrmacion/Gosu/Ruby_calculadora_2D/vendor/bundle/ruby/3.2.0/gems/gosu-1.4.6/dependencies/SDL_sound/SDL_sound.h:53:10: fatal error: 'SDL.h' file not found
+   53 | #include "SDL.h"
+      |          ^~~~~~~
+1 error generated.
+make: *** [Makefile:248: SDL_sound.o] Error 1
+
+make failed, exit code 2

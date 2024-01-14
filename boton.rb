@@ -1,4 +1,18 @@
-# frozen_string_literal: true
+require 'gosu'
 
-class Boton
+class Boton < Gosu::Window
+  def initialize
+    super 200, 200
+    self.caption "hola mundo"
+  end
+  
+  def update
+    
+  end
+  
+  def draw
+    
+  end
 end
+
+Boton.new.show
